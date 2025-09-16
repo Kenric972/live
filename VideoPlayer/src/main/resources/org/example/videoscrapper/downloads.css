@@ -1,0 +1,38 @@
+/* Root background */
+#contentArea {
+    -fx-background-color: #121212; /* deep dark gray */
+}
+
+/* VBox title label */
+.title-label {
+    -fx-text-fill: #f0f0f0;       /* light text */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* ListView background */
+.downloads-list {
+    -fx-control-inner-background: #1e1e1e; /* dark list background */
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #2c2c2c;
+    -fx-border-width: 1;
+    -fx-text-fill: #ffffff; /* default text */
+}
+
+/* ListView cell */
+.downloads-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+/* Selected cell */
+.downloads-list .list-cell:filled:selected,
+.downloads-list .list-cell:filled:selected:hover {
+    -fx-background-color: #2c2c2c;
+    -fx-text-fill: #ff4444; /* accent for selected item */
+}
+
+/* Hover effect for cells */
+.downloads-list .list-cell:hover {
+    -fx-background-color: #333333;
+}

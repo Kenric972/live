@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<AnchorPane fx:id="contentArea"
+            prefHeight="526.0" prefWidth="539.0"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.videoscrapper.Controllers.Library">
+
+    <stylesheets>
+        <URL value="@downloads.css"/>
+    </stylesheets>
+
+    <VBox alignment="TOP_CENTER"
+          prefHeight="501.0"
+          prefWidth="479.0"
+          spacing="10"
+          AnchorPane.bottomAnchor="15.0"
+          AnchorPane.leftAnchor="10.0"
+          AnchorPane.rightAnchor="10.0"
+          AnchorPane.topAnchor="10.0">
+
+        <Label text="Downloaded Videos" styleClass="title-label"/>
+        <ListView fx:id="downloadsList" styleClass="downloads-list" prefHeight="400" />
+
+    </VBox>
+</AnchorPane>
+

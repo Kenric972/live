@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.videoscrapper.Controllers.HomeController">
+
+    <!-- VBox fills the AnchorPane -->
+    <VBox spacing="10" alignment="CENTER"
+          AnchorPane.topAnchor="0.0"
+          AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0">
+
+        <!-- Padding using Insets -->
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <!-- Title -->
+        <Label text="Video Downloader" style="-fx-font-size: 24px;"/>
+
+        <!-- URL Input -->
+        <TextField fx:id="urlField" promptText="Enter video URL" maxWidth="Infinity"/>
+
+        <!-- Download Button -->
+        <Button text="Download" onAction="#startDownload"/>
+
+        <!-- Status Label -->
+        <Label fx:id="statusLabel" text=""/>
+    </VBox>
+
+</AnchorPane>
