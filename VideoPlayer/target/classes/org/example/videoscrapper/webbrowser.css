@@ -1,0 +1,52 @@
+/* Root background */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1e1e1e, #121212);
+}
+
+/* HBox toolbar */
+.hbox {
+    -fx-background-color: #222;
+    -fx-spacing: 5;
+    -fx-padding: 10;
+    -fx-alignment: CENTER_LEFT;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 2);
+}
+
+/* Toolbar buttons */
+.hbox > .button {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-padding: 5 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 1);
+}
+.hbox > .button:hover {
+    -fx-background-color: #ff5252;
+}
+.hbox > .button:pressed {
+    -fx-background-color: #e04343;
+}
+
+/* URL input field */
+#urlField {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-prompt-text-fill: #888;
+    -fx-border-color: transparent;
+    -fx-padding: 6 10 6 10;
+}
+#urlField:focused {
+    -fx-background-color: #333;
+    -fx-border-color: #ff5252;
+    -fx-border-radius: 6;
+}
+
+/* WebView fills space without borders */
+.web-view {
+    -fx-background-color: #fff;
+    -fx-border-color: transparent;
+}

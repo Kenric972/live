@@ -1,0 +1,55 @@
+/* Root AnchorPane background */
+#rootPane {
+    -fx-background-color: #000000;
+
+/* Video container background */
+#videoContainer {
+    -fx-background-color: #000000;
+}
+
+/* Control buttons inside videoContainer (HBox) */
+#videoContainer HBox {
+    -fx-background-color: rgba(0,0,0,0.6); /* semi-transparent bar */
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-padding: 5px;
+}
+
+/* Buttons inside control HBox: show only icons */
+#videoContainer HBox > Button {
+    -fx-background-color: transparent; /* hide background */
+    -fx-border-color: transparent;     /* hide border */
+    -fx-padding: 0;                    /* remove extra padding */
+    -fx-opacity: 0.5;                  /* semi-transparent icons */
+    -fx-cursor: hand;                  /* pointer cursor */
+}
+
+/* Hover effect: fully visible icons */
+#videoContainer HBox > Button:hover {
+    -fx-opacity: 1;
+}
+
+/* Slider track and thumb */
+#progressSlider .track,
+#progressSlider .filled-track {
+    -fx-pref-height: 6px;
+}
+
+#progressSlider .filled-track {
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 3;
+}
+
+#progressSlider .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 12px;
+    -fx-pref-height: 12px;
+}
+
+/* Settings panel */
+#settingsPanel {
+    -fx-background-color: rgba(50,50,50,0.9);
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
