@@ -1,7 +1,7 @@
 /* Root AnchorPane background */
 #rootPane {
     -fx-background-color: #000000;
-
+}
 /* Video container background */
 #videoContainer {
     -fx-background-color: #000000;
@@ -53,3 +53,4 @@
     -fx-background-radius: 5px;
     -fx-padding: 10px;
 }
+
